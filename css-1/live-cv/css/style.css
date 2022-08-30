@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #EDEDED;
+  border-bottom: 2px solid #CF8B05;
+}
+
+img {
+  width: 120px;
+}
+
+/* Main */
+main {
+  margin-left: 1rem;
+}
+
+.title {
+  color: #CF8B05;
+}
+
+h3 {
+  font-style: italic;
+}
+
+/* Footer */
+
+footer {
+  border-top: 2px solid #CF8B05;
+}
