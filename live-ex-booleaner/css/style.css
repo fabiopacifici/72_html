@@ -1,5 +1,4 @@
 /* Common rules */
-
 :root {
   --bol-dark: #3c0f0f;
   --bol-secondary: #20A9E5;
@@ -8,16 +7,79 @@
   --bol-primary-lite: #B1E5F2;
   --bol-white: #FFFFFF;
 }
+table {
+  text-align: left;
+  border-spacing: 0;
+}
+
+thead {
+  background-color: var(--bol-secondary);
+  color: var(--bol-white)
+}
+
+/* Utilities */
+.w-50 {
+  width: 50%;
+}
+
+.bg_primary_lite {
+  background-color: var(--bol-primary-lite);
+}
+
+h3 {
+  margin: 0;
+}
 /* header */
 
-header {
+#site_header {
   background-color: var(--bol-primary);
   background-image: url("../img/pattern.png");
   background-size: 18%;
 
 }
-
 .logo {
   height: 50px;
   margin: 1.5rem 0.5rem 0;
+}
+/* Main */
+.title {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+.metadata {
+  color: var(--bol-gray);
+  margin-bottom: 1rem;
+}
+
+.author {
+  color: var(--bol-primary);
+}
+
+.date {
+  font-size: 0.75rem;
+}
+
+.caption {
+  font-size: 0.75rem;
+}
+
+
+/* Related articles */
+#monitor {
+  background-image: url("../img/monitor.jpg");
+}
+
+#graph {
+  background-image: url("../img/graph.jpg");
+}
+
+.related_article {
+  width: 250px;
+  height: 200px;
+  background-repeat: no-repeat;
+  color: var(--bol-white);
+  text-align: center;
+  padding: 10px;
 }
