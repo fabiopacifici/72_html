@@ -1,0 +1,10 @@
+/* Common rules */
+
+:root {
+  --bol-dark: #3c0f0f;
+  --bol-secondary: #20A9E5;
+  --bol-primary: #4EA0FF;
+  --bol-gray: #808080;
+  --bol-primary-lite: #B1E5F2;
+  --bol-white: #FFFFFF;
+}
