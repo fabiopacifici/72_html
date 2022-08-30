@@ -8,3 +8,16 @@
   --bol-primary-lite: #B1E5F2;
   --bol-white: #FFFFFF;
 }
+/* header */
+
+header {
+  background-color: var(--bol-primary);
+  background-image: url("../img/pattern.png");
+  background-size: 18%;
+
+}
+
+.logo {
+  height: 50px;
+  margin: 1.5rem 0.5rem 0;
+}
