@@ -28,9 +28,11 @@ h2 {
 }
 
 li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
-
+section {
+  margin-bottom: 3rem;
+}
 /* #endregion Common */
 
 /* #region Utilities */
@@ -70,6 +72,7 @@ li {
   font-size: 0.8rem;
   border-radius: 1rem;
   color: #fff;
+  display: inline-block;
 }
 
 .badge_editorial {
