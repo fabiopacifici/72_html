@@ -65,7 +65,36 @@ li {
   padding-left: 2.5rem;
   padding-bottom: 0.5rem;
 }
+.badge {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  color: #fff;
+}
 
+.badge_editorial {
+  background-color: var(--tb-primary);
+}
+
+.badge_goals {
+  background-color: var(--tb-purple);
+}
+
+.badge_recruiting {
+  background-color: var(--tb-green);
+}
+
+.badge_mobile {
+  background-color: var(--tb-orange);
+}
+
+.badge_websites {
+  background-color: var(--tb-fuscia);
+}
+
+.badge_sales {
+  background-color: var(--tb-pale-green);
+}
 /* #endregion Utilities */
 /* #region Header */
 header {
@@ -98,17 +127,6 @@ header {
 
 .actions {
   border-bottom: 3px solid var(--tb-ligther);
-}
-
-.badge {
-  padding: 0.35rem 0.75rem;
-  font-size: 0.8rem;
-  border-radius: 1rem;
-  color: #fff;
-}
-
-.badge_editorial {
-  background-color: var(--tb-primary);
 }
 
 .icon {
