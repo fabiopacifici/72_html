@@ -1,3 +1,4 @@
+/* #region Common */
 :root {
   --tb-darker: #444851;
   --tb-ligth: #C5CBD0;
@@ -22,7 +23,50 @@ body {
   background-color: var(--tb-ligther);
   font-family: Arial, Helvetica, sans-serif;
 }
+h2 {
+  margin-bottom: 1rem;
+}
 
+li {
+  margin-bottom: 0.75rem;
+}
+
+/* #endregion Common */
+
+/* #region Utilities */
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.btn {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #0000;
+  border-color: #0000;
+}
+
+.btn_primary {
+  background-color: var(--tb-primary);
+  color: var(--tb-white)
+}
+
+.btn_outline {
+  border: 1px solid var(--tb-ligth);
+  color: var(--tb-ligth)
+}
+
+.list_unstyled {
+  list-style: none;
+}
+
+.spacing {
+  padding-top: 1.25rem;
+  padding-left: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* #endregion Utilities */
 /* #region Header */
 header {
   background-color: var(--tb-white);
@@ -45,3 +89,43 @@ header {
 }
 
 /* #endregion Header */
+/* Main */
+
+.tasks_wrapper {
+  background-color: var(--tb-white);
+  border-radius: 1rem;
+}
+
+.actions {
+  border-bottom: 3px solid var(--tb-ligther);
+}
+
+.badge {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.badge_editorial {
+  background-color: var(--tb-primary);
+}
+
+.icon {
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.check {
+  color: var(--tb-pale-green);
+  border: 1px solid var(--tb-pale-green);
+
+}
+
+.times {
+  color: var(--tb-red);
+  border: 1px solid var(--tb-red);
+}
