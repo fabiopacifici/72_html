@@ -1,0 +1,83 @@
+/* #region Common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tm-dark: #000000;
+  --tm-dark-variant: #0F0E17;
+  --tm-primary: #6ECBE3;
+  --tm-accent: #E53170;
+  --tm-light: #FFFFFF;
+}
+
+body {
+  font-family: 'Poppins', sans-serif
+}
+
+/* #endregion Common */
+/* #region Debug */
+.debug header {
+  background-color: var(--tm-accent);
+  height: 200px;
+}
+
+.debug main {
+  background-color: var(--tm-primary);
+  height: 600px;
+}
+
+.debug footer {
+  background-color: var(--tm-accent);
+  height: 200px;
+}
+
+.debug .card {
+  background-color: var(--tm-dark-variant);
+  height: 120px;
+}
+
+/* #endregion Debug */
+/* #region Utilities */
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.row::after,
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.col-4 {
+  width: calc(100% / 3);
+  padding: 1rem;
+  float: left
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* #endregion Utilities */
+
+/* #region Header */
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: var(--tm-accent);
+  font-family: 'Fredoka One', cursive;
+  padding: 2rem 0;
+}
