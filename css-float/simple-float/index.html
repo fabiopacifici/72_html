@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>Float simple layout</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .row::after {
+      display: table;
+      content: "";
+      clear: both;
+    }
+
+    .container {
+      width: 70%;
+      margin: auto;
+    }
+
+    .float_left {
+      float: left;
+    }
+
+    .float_right {
+      float: right
+    }
+
+    .pe_1 {
+      padding-right: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Hello Float</h1>
+  <div class="container">
+
+    <div class="row">
+      <img width="240" src="./img/grogu-soup.jpg" alt="" class="float_left pe_1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis voluptates soluta qui? Nam recusandae ipsa
+        nesciunt voluptatum, ipsum asperiores, accusamus voluptatibus tempora soluta commodi fuga consequatur sit
+        eligendi sed quo illum quia laudantium nihil. Tenetur repudiandae delectus consequatur inventore in repellendus
+        ut magnam illo, dignissimos alias numquam officia voluptatibus expedita placeat necessitatibus sequi dicta sed
+        corrupti! Consequatur, atque eos sint perspiciatis quas, labore nulla accusamus provident autem deserunt quia
+        officiis voluptas expedita laborum placeat eligendi nisi esse recusandae sapiente repellendus unde culpa
+        reiciendis officia. Tempora expedita optio est magni, laborum, esse at quaerat impedit, debitis in ullam
+        asperiores natus fugit nobis! Itaque repellat ratione necessitatibus est suscipit odit dolorum, impedit illum
+        praesentium inventore ut dolore fugit aspernatur minima tempore laboriosam deserunt iste, debitis vitae quam
+        odio neque, adipisci sint expedita! Neque amet ducimus suscipit odit! Porro libero nemo voluptate ex nostrum
+        repudiandae, maxime, architecto quasi eveniet deleniti ullam a! Nobis nulla a at, repellat vero cumque, in
+        nostrum sapiente repellendus cupiditate fugiat, fugit odit sed ea beatae. Porro possimus rerum odit consectetur
+        odio nesciunt dolores itaque nemo omnis nulla optio quaerat fugit eos, illo ipsum quibusdam! Architecto velit
+        eaque quibusdam, minus recusandae cumque obcaecati totam fugit neque incidunt cum eius.
+        Neque amet ducimus suscipit odit! Porro libero nemo voluptate ex nostrum
+        repudiandae, maxime, architecto quasi eveniet deleniti ullam a! Nobis nulla a at, repellat vero cumque, in
+        nostrum sapiente repellendus cupiditate fugiat, fugit odit sed ea beatae. Porro possimus rerum odit consectetur
+        odio nesciunt dolores itaque nemo omnis nulla optio quaerat fugit eos, illo ipsum quibusdam! Architecto velit
+        eaque quibusdam, minus recusandae cumque obcaecati totam fugit neque incidunt cum eius.
+      </p>
+    </div>
+    <div class="row">
+      <img width="240" src="./img/mando.jpg" alt="" class="float_right pe_1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis voluptates soluta qui? Nam recusandae ipsa
+        nesciunt voluptatum, ipsum asperiores, accusamus voluptatibus tempora soluta commodi fuga consequatur sit
+        eligendi sed quo illum quia laudantium nihil. Tenetur repudiandae delectus consequatur inventore in repellendus
+        ut magnam illo, dignissimos alias numquam officia voluptatibus expedita placeat necessitatibus sequi dicta sed
+        corrupti! Consequatur, atque eos sint perspiciatis quas, labore nulla accusamus provident autem deserunt quia
+        officiis voluptas expedita laborum placeat eligendi nisi esse recusandae sapiente repellendus unde culpa
+        reiciendis officia. Tempora expedita optio est magni, laborum, esse at quaerat impedit, debitis in ullam
+        asperiores natus fugit nobis! Itaque repellat ratione necessitatibus est suscipit odit dolorum, impedit illum
+        praesentium inventore ut dolore fugit aspernatur minima tempore laboriosam deserunt iste, debitis vitae quam
+        odio neque, adipisci sint expedita! Neque amet ducimus suscipit odit! Porro libero nemo voluptate ex nostrum
+        repudiandae, maxime, architecto quasi eveniet deleniti ullam a! Nobis nulla a at, repellat vero cumque, in
+        nostrum sapiente repellendus cupiditate fugiat, fugit odit sed ea beatae. Porro possimus rerum odit consectetur
+        odio nesciunt dolores itaque nemo omnis nulla optio quaerat fugit eos, illo ipsum quibusdam! Architecto velit
+        eaque quibusdam, minus recusandae cumque obcaecati totam fugit neque incidunt cum eius.
+        Neque amet ducimus suscipit odit! Porro libero nemo voluptate ex nostrum
+        repudiandae, maxime, architecto quasi eveniet deleniti ullam a! Nobis nulla a at, repellat vero cumque, in
+        nostrum sapiente repellendus cupiditate fugiat, fugit odit sed ea beatae. Porro possimus rerum odit consectetur
+        odio nesciunt dolores itaque nemo omnis nulla optio quaerat fugit eos, illo ipsum quibusdam! Architecto velit
+        eaque quibusdam, minus recusandae cumque obcaecati totam fugit neque incidunt cum eius.
+      </p>
+    </div>
+    <div class="">
+      <img width="240" src="./img/th.jpg" alt="" class="float_left pe_1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis voluptates soluta qui? Nam recusandae ipsa
+        nesciunt voluptatum, ipsum asperiores, accusamus voluptatibus tempora soluta commodi fuga consequatur sit
+        eligendi sed quo illum quia laudantium nihil.
+      </p>
+    </div>
+
+    <div class="call_to_action">
+      <h2>Watch Mandalorian now</h2>
+      <a href="#">Start streaming</a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

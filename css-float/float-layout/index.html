@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Simple float layout</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .row::after {
+      display: table;
+      content: "";
+      clear: both;
+    }
+
+    .container {
+      width: 70%;
+      margin: 3rem auto;
+    }
+
+    .col-3 {
+      width: calc(100% / 3);
+      float: left;
+      padding: 0 1rem;
+    }
+
+    h4 {
+      color: orange;
+      margin: 1rem 0;
+    }
+
+    .pl-1 {
+      padding-left: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <img src="./img/the-mandalorian-bebe-yoda-grogu-6723.webp" alt="">
+        <h4>Mandalorian</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, quas tempore voluptate ducimus, neque sed
+          consequuntur hic omnis illum sequi harum ratione alias qui laudantium earum sunt maiores culpa facilis?</p>
+      </div>
+      <div class="col-3">
+        <img src="./img/the-mandalorian-bebe-yoda-grogu-6723.webp" alt="">
+        <h4>Mandalorian</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, quas tempore voluptate ducimus, neque sed
+          consequuntur hic omnis illum sequi harum ratione alias qui laudantium earum sunt maiores culpa facilis?
+        </p>
+      </div>
+      <div class="col-3">
+        <img src="./img/the-mandalorian-bebe-yoda-grogu-6723.webp" alt="">
+        <h4>Mandalorian</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, quas tempore voluptate ducimus, neque sed
+          consequuntur hic omnis illum sequi harum ratione alias qui laudantium earum sunt maiores culpa facilis?
+        </p>
+      </div>
+    </div>
+
+    <div class="pl-1">
+      <h4>Next section</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aut, iusto ipsam distinctio ut quidem fugit,
+        nulla a excepturi voluptatum quibusdam aperiam nam illum odit ex temporibus tempora consequuntur ipsa.</p>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

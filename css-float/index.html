@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang='en'>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Document</title>
+    <style>
+      .container {
+        border: 4px solid red;
+      }
+      .pink, .blue {
+        width: 200px;
+        height: 200px;
+      }
+      .pink {
+        background-color: pink;
+        float: left;
+      }
+      .blue {
+        background-color: blue;
+        float: left;
+      }
+      .clearfix::after{
+        content: '';
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Soluzione non semantica 
+    <div class="container">
+      <div class="pink"></div>
+      <div class="blue"></div>
+
+      <div style="clear:both"></div>
+    </div>-->
+
+    <div class="container clearfix">
+      <div class="pink"></div>
+      <div class="blue"></div>
+    </div>
+
+
+    <div class="content">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum error nemo possimus adipisci quia nostrum, hic explicabo vitae voluptas. Deserunt, animi! Asperiores architecto possimus, eaque tempora eveniet ullam fugiat alias?</p>
+    </div>
+    
+  </body>
+
+</html>
