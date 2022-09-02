@@ -17,6 +17,17 @@ body {
   font-family: 'Poppins', sans-serif
 }
 
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding: 3rem 0;
+}
 /* #endregion Common */
 /* #region Debug */
 .debug header {
@@ -46,24 +57,24 @@ body {
   width: 70%;
   margin: auto;
 }
-
+.row {
+  margin: 0 -1rem;
+}
 .row::after,
 .clearfix::after {
   display: table;
   content: "";
   clear: both;
 }
-
-.left {
-  float: left;
-}
-
 .col-4 {
   width: calc(100% / 3);
   padding: 1rem;
   float: left
 }
 
+.left {
+  float: left;
+}
 .text-center {
   text-align: center;
 }
@@ -81,3 +92,38 @@ header h1 {
   font-family: 'Fredoka One', cursive;
   padding: 2rem 0;
 }
+/* #endregion Header */
+
+/* #region Main */
+
+.card {
+  background-color: var(--tm-dark-variant);
+  color: var(--tm-light);
+  border-radius: 0.5rem;
+  box-shadow: 4px 6px 8px darkgrey;
+}
+
+.card:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.card img {
+  height: 100px;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+}
+
+.card .details h3 {
+  padding-top: 0.5rem;
+}
+
+.card a {
+  color: var(--tm-primary);
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* #endregion Main */
