@@ -1,0 +1,95 @@
+/* Common rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+[class^="col-"] {
+  padding: 0 1rem;
+}
+
+
+/* Griglia con flexbox */
+.col-1 {
+  width: calc((100% / 12) * 1);
+}
+
+.col-3 {
+  width: calc((100% / 12) * 3);
+}
+
+.col-4 {
+  width: calc((100% / 12) * 4);
+}
+
+.col-9 {
+  width: calc((100% / 12) * 9);
+}
+
+.col-6 {
+  width: calc((100% / 12) * 6);
+}
+
+
+/* Debug */
+
+.debug [class^="col-"] {
+  background-color: red;
+  height: 600px;
+  border: 1px solid;
+}
+
+.debug header,
+.debug footer {
+  height: 240px;
+}
+
+/* Header */
+
+header,
+footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bolder;
+
+}
+
+main {
+  margin: 2rem 0;
+}
+
+article {
+  margin-bottom: 1rem;
+}
