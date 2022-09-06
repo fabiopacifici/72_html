@@ -1,0 +1,121 @@
+/* #region Common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #endregion Common */
+/* #region Utility */
+.container {
+  width: 70%;
+  max-width: 1176px;
+  margin: auto
+}
+
+.container-sm {
+  width: 60%;
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+
+.row {
+  display: flex;
+  flex: wrap;
+  gap: 1rem
+}
+
+.col-3 {
+  width: calc(100% / 12 * 3);
+}
+
+.col-6 {
+  width: calc(100% / 12 * 6);
+}
+
+.col-9 {
+  width: calc(100% / 12 * 9);
+}
+
+
+.d-flex {
+  display: flex;
+}
+
+.bg_secondary {
+  background-color: lightgray;
+}
+
+.py_2 {
+  padding: 2rem 0;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+/* #endregion Utility */
+/* #region Debug */
+
+.debug>header,
+.debug>footer {
+  height: 550px;
+  background-color: red;
+}
+
+.debug nav {
+  background-color: aqua;
+  height: 80px;
+}
+
+.debug header .logo,
+.debug header .menu,
+.debug header .login {
+  height: 80px;
+  background-color: yellowgreen;
+  border: 1px solid;
+}
+
+.debug .container-sm {
+  height: 400px;
+  background-color: blue;
+}
+
+.debug [class^="col"] {
+  height: 300px;
+  background-color: rgb(0, 183, 255);
+}
+
+.debug .contents {
+  height: 400px;
+  background-color: green;
+}
+
+/* #endregion Debug */
+
+/* #region Header */
+header .logo,
+header .login {
+  flex-grow: 1;
+}
+
+header .menu {
+  flex-grow: 2;
+}
+
+/* #endregion Header */
+/* #region Main */
+
+main section {
+  padding: 2rem 0;
+}
+
+/* #endregion Main */
+/* #region Footer */
+
+footer .footer_bottom {
+  padding: 1rem 0;
+}
+
+/* #endregion Footer */
