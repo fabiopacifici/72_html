@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.banner {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.banner:hover {
+  cursor: pointer;
+}
+
+.banner:hover h1 {
+  color: red;
+}
