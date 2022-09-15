@@ -102,8 +102,16 @@ img {
   background-color: var(--db-primary);
   color: var(--db-white);
 }
+.btn_outline {
+  background-color: transparent;
+  color: var(--db-dark);
+  border: 1px solid var(--db-dark);
+}
 .my_2 {
   margin: 2rem 0;
+}
+.py_2 {
+  padding: 2rem 0;
 }
 /* #endregion Utilities */
 
@@ -187,13 +195,18 @@ header .menu_left {
   background-color: var(--db-primary-light);
 }
 
-.call_to_action>div {
+.jumbotron .call_to_action>div {
   font-size: 0.75rem;
   margin-top: 0.5rem;
 }
 
 .jumbotron img {
   margin-bottom: -5rem;
+}
+/* Patners */
+
+.partners .call_to_action {
+  padding-top: 2rem;
 }
 /* I Blocchi colorati */
 
