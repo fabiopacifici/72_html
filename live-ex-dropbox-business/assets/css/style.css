@@ -97,7 +97,7 @@ background: #FFD830;
 }
 
 .debug .team {
-  height: 400px;
+  /* height: 400px; */
   background-color: red;
 }
 
@@ -144,6 +144,25 @@ header {
   background-color: var(--db-primary-light);
 }
 
+/* I Blocchi colorati */
+
+.team .left,
+.team .center,
+.team .right {
+  flex-grow: 1;
+}
+
+.team .left,
+.team .right {
+  flex-wrap: wrap;
+}
+
+.team .box {
+  width: calc(100% / 2);
+  border: 1px solid;
+  aspect-ratio: 1 / 1;
+
+}
 /* Footer */
 
 .footer_menu {
