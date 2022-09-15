@@ -33,6 +33,14 @@ a {
   color: var(--db-dark);
 }
 
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
 /* #region Utilities */
 .d_flex {
   display: flex;
@@ -70,7 +78,9 @@ a {
 .col-7 {
   width: calc(100% / 12 * 7);
 }
-
+.col-8 {
+  width: calc(100% / 12 * 8);
+}
 .col-12 {
   width: 100%;
 }
@@ -92,7 +102,9 @@ a {
   background-color: var(--db-primary);
   color: var(--db-white);
 }
-
+.my_2 {
+  margin: 2rem 0;
+}
 /* #endregion Utilities */
 
 /* #region Debug */
@@ -175,6 +187,14 @@ header .menu_left {
   background-color: var(--db-primary-light);
 }
 
+.call_to_action>div {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.jumbotron img {
+  margin-bottom: -5rem;
+}
 /* I Blocchi colorati */
 
 .team .left,
