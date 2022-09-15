@@ -20,8 +20,17 @@ background: #FFD830;
 */
   --db-dark: #000000;
   --db-white: #FFFFFF;
-  --db-primary-light: #B4D0E7;
   --db-primary: #0061FF;
+    --db-primary-soft: #0093CE;
+  --db-primary-light: #B4D0E7;
+  --db-primary-dark: #0D2481;
+    --db-success: #A2D39B;
+    --db-success-light: #C8E6C5;
+    --db-danger-dark: #61082B;
+    --db-danger: #FF1C1C;
+    --db-danger-soft: #D5001F;
+    --db-warning: #FFD830;
+    --db-light: #F5F5F5;
 }
 
 body {
@@ -37,12 +46,15 @@ h1 {
   font-size: 70px;
   font-weight: 700;
 }
+
 h2 {
   font-size: 36px;
 }
+
 img {
   max-width: 100%;
 }
+
 /* #region Utilities */
 .d_flex {
   display: flex;
@@ -80,12 +92,15 @@ img {
 .col-7 {
   width: calc(100% / 12 * 7);
 }
+
 .col-8 {
   width: calc(100% / 12 * 8);
 }
+
 .col-12 {
   width: 100%;
 }
+
 .list_inline {
   list-style: none;
 }
@@ -104,16 +119,51 @@ img {
   background-color: var(--db-primary);
   color: var(--db-white);
 }
+
 .btn_outline {
   background-color: transparent;
   color: var(--db-dark);
   border: 1px solid var(--db-dark);
 }
+
 .my_2 {
   margin: 2rem 0;
 }
+
 .py_2 {
   padding: 2rem 0;
+}
+/* Colors */
+.bg_primary_light {
+  background-color: var(--db-primary-light);
+}
+
+.bg_primary_dark {
+  background-color: var(--db-primary-dark);
+}
+
+.bg_success {
+  background-color: var(--db-success);
+}
+
+.bg_danger_soft {
+  background-color: var(--db-danger-soft);
+}
+
+.bg_danger_dark {
+  background-color: var(--db-danger-dark);
+}
+
+.bg_danger {
+  background-color: var(--db-danger);
+}
+
+.bg_primary_soft {
+  background-color: var(--db-primary-soft);
+}
+
+.bg_warning {
+  background-color: var(--db-warning);
 }
 /* #endregion Utilities */
 
@@ -172,6 +222,7 @@ img {
 .debug .footer_menu {
   height: 400px;
 }
+
 /* #endregion Debug */
 
 /* Header */
@@ -180,6 +231,7 @@ header {
   box-shadow: 0 0 5px black;
   padding: 1rem;
 }
+
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -205,10 +257,32 @@ header .menu_left {
 .jumbotron img {
   margin-bottom: -5rem;
 }
+
 /* Patners */
 
 .partners .call_to_action {
   padding-top: 2rem;
+}
+/* Teams */
+.team .center {
+  background-color: var(--db-light);
+}
+
+.team .box.bg_success {
+  box-shadow: inset 0 0 0 10px var(--db-success-light);
+}
+
+.team .box {
+  position: relative;
+}
+
+.team .box img {
+  width: 50%;
+  filter: invert(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* I Blocchi colorati */
 
@@ -225,10 +299,9 @@ header .menu_left {
 
 .team .box {
   width: calc(100% / 2);
-  border: 1px solid;
   aspect-ratio: 1 / 1;
-
 }
+
 /* Footer */
 
 .footer_menu {
