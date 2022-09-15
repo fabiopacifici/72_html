@@ -21,10 +21,19 @@ background: #FFD830;
   --db-dark: #000000;
   --db-white: #FFFFFF;
   --db-primary-light: #B4D0E7;
+  --db-primary: #0061FF;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
-/* Utilities */
+a {
+  text-decoration: none;
+  color: var(--db-dark);
+}
+
+/* #region Utilities */
 .d_flex {
   display: flex;
 }
@@ -65,10 +74,28 @@ background: #FFD830;
 .col-12 {
   width: 100%;
 }
+.list_inline {
+  list-style: none;
+}
 
+.list_inline li {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
 
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
 
-/* Debug */
+.btn_primary {
+  background-color: var(--db-primary);
+  color: var(--db-white);
+}
+
+/* #endregion Utilities */
+
+/* #region Debug */
 
 .debug header {
   /*  height: 80px; */
@@ -123,20 +150,24 @@ background: #FFD830;
 .debug .footer_menu {
   height: 400px;
 }
+/* #endregion Debug */
 
 /* Header */
-
-header .navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-
 header {
   background-color: var(--db-white);
   box-shadow: 0 0 5px black;
   padding: 1rem;
 }
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .menu_left {
+  display: flex;
+  align-items: center;
+}
+
 
 /* Main */
 
