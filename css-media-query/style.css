@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.square {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 479px) {
+  .square {
+    background-color: pink;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .square {
+    background-color: green;
+    display: inline-block;
+  }
+}
