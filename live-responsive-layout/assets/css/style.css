@@ -1,0 +1,193 @@
+/* Common rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #9793e5;
+  --secondary: #0084fd;
+  --secondary-soft: #b4ddfe;
+  --accent: #fdc15f;
+  --darker: #000;
+  --dark: #323332;
+  --light: #fffefe;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+/* Utilities  */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+[class^="col_"] {
+  padding: 0 1rem;
+}
+
+.col_1 {
+  width: calc(100% / 12 * 1);
+}
+
+.col_2 {
+  width: calc(100% / 12 * 2);
+}
+
+.col_3 {
+  width: calc(100% / 12 * 3);
+}
+
+.col_4 {
+  width: calc(100% / 12 * 4);
+}
+
+.col_5 {
+  width: calc(100% / 12 * 5);
+}
+
+.col_6 {
+  width: 50%;
+}
+
+.col_7 {
+  width: calc(100% / 12 * 7);
+}
+
+.col_8 {
+  width: calc(100% / 12 * 8);
+}
+
+.col_9 {
+  width: calc(100% / 12 * 9);
+}
+
+.col_10 {
+  width: calc(100% / 12 * 10);
+}
+
+.col_11 {
+  width: calc(100% / 12 * 11);
+}
+
+.col_12 {
+  width: 100%;
+}
+
+
+
+/*#region Debug  */
+.debug header {
+  /*height: 80px;*/
+}
+
+.debug .logo {
+  height: 40px;
+  border: 1px solid;
+  width: 150px;
+}
+
+.debug .main_menu {
+  height: 40px;
+  border: 1px solid;
+  width: 350px;
+}
+
+.debug [class^="col_"] {
+  height: 350px;
+  border: 1px solid red;
+}
+
+.debug .partners .heading,
+.debug .partners .partner {
+  height: 200px;
+  background-color: gainsboro;
+  border: 1px solid black;
+}
+
+.debug .partner .avatar {
+  width: 150px;
+  background-color: red;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+}
+
+.debug .call_to_action .container {
+  height: 400px;
+  background-color: green;
+}
+
+.debug footer {
+  height: 300px;
+}
+
+/*#endregion Debug  */
+
+
+/* Header */
+header {
+  background-color: var(--secondary);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+/* Main */
+
+.planning {
+  background-color: var(--primary);
+}
+
+.partner {
+  display: flex;
+}
+
+.benefits {
+  background-color: var(--primary);
+}
+
+.call_to_action {
+  background-color: var(--primary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark);
+}
+
+/* Responsive Grid */
+@media screen and (min-width: 768px) {
+  .col_md_4 {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col_md_8 {
+    width: calc(100% / 12 * 8);
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .col_lg_4 {
+    width: calc(100% / 12 * 4);
+  }
+
+  .col_lg_6 {
+    width: calc(100% / 12 * 6);
+  }
+
+}
