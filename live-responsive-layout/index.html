@@ -1,129 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Responsive Structure</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body class="debug">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Responsive Structure</title>
 
-    <header id="site_header">
-      <nav class="container">
-        <a href="" class="logo"></a>
-        <ul class="main_menu"></ul>
-      </nav>
-    </header>
-    <!-- /#site_header -->
-    <main id="site_main">
-      <section class="demo">
-        <div class="container">
-          <div class="row">
-            <div class="col_12 col_md_8"></div>
-            <!-- /.col_12 -->
-            <div class="col_12 col_md_4"></div>
-            <!-- /.col_12 -->
-            <div class="col_12 col_md_4"></div>
-            <!-- /.col_12 -->
-            <div class="col_12 col_md_4"></div>
-            <!-- /.col_12 -->
-            <div class="col_12 col_md_4"></div>
-            <!-- /.col_12 -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fontawesome CDN -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
+    integrity='sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=='
+    crossorigin='anonymous' referrerpolicy='no-referrer' />
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="">
+
+  <header id="site_header">
+    <nav class="container">
+      <a href="" class="logo">
+        <img src="./assets/img/logo.png" alt="">
+      </a>
+      <ul class="main_menu inline_list">
+        <li><a href="#">Planning</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#" class="btn btn_light">Get Started</a></li>
+      </ul>
+      <div class="mobile_nav">
+        <i class="fas fa-bars fa-2x fa-fw"></i>
+      </div>
+    </nav>
+  </header>
+  <!-- /#site_header -->
+  <main id="site_main">
+    <section class="demo">
+      <div class="container">
+        <div class="row">
+          <div class="col_12 col_md_8">
+            <div class="card">
+              <div class="card_body">
+                <h3>Get a demo application</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero ducimus officiis modi ipsam
+                  voluptatem? Nemo magnam odio nam officia vitae odit alias laborum nulla.
+                </p>
+                <a href="#" class="btn btn_lg btn_secondary mb_2">
+                  <i class="fa-brands fa-apple"></i>
+                  App Store
+                </a>
+              </div>
+              <img src="./assets/img/phone.png" alt="">
+            </div>
           </div>
-          <!-- /.row -->
+          <!-- /.col_12 -->
+          <div class="col_12 col_md_4">
+            <div class="card">
+              <div class="card_header">
+                <i class="fas fa-file-code fa-3x fa-fw"></i>
+                <h3>Clean code</h3>
+              </div>
+              <div class="card_body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora aspernatur alias
+                  repellendus dignissimos, exercitationem repudiandae, facere fugiat voluptatibus rem illo dolore sed
+                  quo culpa.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col_12 -->
+          <div class="col_12 col_md_4">
+            <div class="card">
+              <div class="card_header">
+                <i class="fa-solid fa-compass-drafting fa-3x fa-fw"></i>
+                <h3>Web Design</h3>
+              </div>
+              <div class="card_body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora aspernatur alias
+                  repellendus dignissimos, exercitationem repudiandae, facere fugiat voluptatibus rem illo dolore sed
+                  quo culpa.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col_12 -->
+          <div class="col_12 col_md_4">
+            <div class="card">
+              <div class="card_header">
+                <i class="fa-solid fa-laptop-code fa-3x fa-fw"></i>
+                <h3>Development</h3>
+              </div>
+              <div class="card_body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora aspernatur alias
+                  repellendus dignissimos, exercitationem repudiandae, facere fugiat voluptatibus rem illo dolore sed
+                  quo culpa.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col_12 -->
+          <div class="col_12 col_md_4">
+            <div class="card">
+              <div class="card_header">
+                <i class="fa-solid fa-bullhorn fa-3x fa-fw"></i>
+                <h3>Branding</h3>
+              </div>
+              <div class="card_body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora aspernatur alias
+                  repellendus dignissimos, exercitationem repudiandae, facere fugiat voluptatibus rem illo dolore sed
+                  quo culpa.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.col_12 -->
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.demo -->
-      <section class="planning">
-        <div class="container">
-          <div class="row">
-            <div class="col_12 col_lg_6"></div>
-            <!-- /.col_12 col_lg_6 -->
-            <div class="col_12 col_lg_6"></div>
-            <!-- /.col_12 col_lg_6 -->
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.demo -->
+    <section class="planning">
+      <div class="container">
+        <div class="row">
+          <div class="col_12 col_lg_6">
+            <div class="p_lg_4 text_light">
+              <img src="./assets/img/planning1.png" alt="">
+              <h2>Strategic Planning</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus eveniet praesentium magni tempore
+                maiores vel itaque ut obcaecati voluptate? Cupiditate sed facere doloremque nisi deleniti minima nihil
+                et sit dignissimos. </p>
+            </div>
           </div>
-          <!-- /.row -->
+          <!-- /.col_12 col_lg_6 -->
+          <div class="col_12 col_lg_6 flex_end">
+            <div class="card">
+              <img src="./assets/img/planning2.png" alt="">
+              <h3>App Development</h3>
+              <p><em>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, molestiae voluptas illum tempore
+                  vero voluptatum! Vero earum mollitia incidunt ut assumenda repellendus veniam vel dolor. Velit
+                  similique hic veritatis explicabo.</em></p>
+              <div class="down">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
+            </div>
+          </div>
+          <!-- /.col_12 col_lg_6 -->
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.planning -->
-      <section class="partners">
-        <div class="container">
-          <div class="heading"></div>
-          <div class="partner">
-            <div class="avatar"></div>
-            <!-- /.avatar -->
-            <div class="bio"></div>
-            <!-- /.bio -->
-          </div>
-          <!-- partner -->
-          <div class="partner">
-            <div class="avatar"></div>
-            <!-- /.avatar -->
-            <div class="bio"></div>
-            <!-- /.bio -->
-          </div>
-          <!-- partner -->
-          <div class="partner">
-            <div class="avatar"></div>
-            <!-- /.avatar -->
-            <div class="bio"></div>
-            <!-- /.bio -->
-          </div>
-          <!-- partner -->
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.planning -->
+    <section class="partners">
+      <div class="container">
+        <div class="heading"></div>
+        <div class="partner">
+          <div class="avatar"></div>
+          <!-- /.avatar -->
+          <div class="bio"></div>
+          <!-- /.bio -->
         </div>
-      </section>
-
-      <section class="benefits">
-        <div class="container">
-          <div class="row">
-            <div class="col_12 col_md_6 col_lg_4"></div>
-            <!-- /.col_12 col_md_6 col_lg_4 -->
-            <div class="col_12 col_md_6 col_lg_4"></div>
-            <!-- /.col_12 col_md_6 col_lg_4 -->
-            <div class="col_12 col_md_6 col_lg_4"></div>
-            <!-- /.col_12 col_md_6 col_lg_4 -->
-            <div class="col_12 col_md_6 col_lg_4"></div>
-            <!-- /.col_12 col_md_6 col_lg_4 -->
-            <div class="col_12 col_md_6 col_lg_4"></div>
-            <!-- /.col_12 col_md_6 col_lg_4 -->
-            <div class="col_12 col_md_6 col_lg_4"></div>
-            <!-- /.col_12 col_md_6 col_lg_4 -->
-          </div>
-          <!-- /.row -->
+        <!-- partner -->
+        <div class="partner">
+          <div class="avatar"></div>
+          <!-- /.avatar -->
+          <div class="bio"></div>
+          <!-- /.bio -->
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.benefits -->
-
-      <section class="about">
-        <div class="container">
-          <div class="row">
-            <div class="col_12 col_md_8"></div>
-            <!-- /.col_12 col_md_8 -->
-            <div class="col_12 col_md_4"></div>
-            <!-- /.col_12 col_md_4 -->
-          </div>
-          <!-- /.row -->
+        <!-- partner -->
+        <div class="partner">
+          <div class="avatar"></div>
+          <!-- /.avatar -->
+          <div class="bio"></div>
+          <!-- /.bio -->
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.about -->
-      <section class="call_to_action">
-        <div class="container"></div>
-        <!-- /.container -->
-      </section>
-      <!-- /.call_to_action -->
+        <!-- partner -->
+      </div>
+    </section>
 
-    </main>
-    <!-- /#site_main -->
-    <footer id="site_footer"></footer>
-    <!-- /#site_footer -->
+    <section class="benefits">
+      <div class="container">
+        <div class="row">
+          <div class="col_12 col_md_6 col_lg_4"></div>
+          <!-- /.col_12 col_md_6 col_lg_4 -->
+          <div class="col_12 col_md_6 col_lg_4"></div>
+          <!-- /.col_12 col_md_6 col_lg_4 -->
+          <div class="col_12 col_md_6 col_lg_4"></div>
+          <!-- /.col_12 col_md_6 col_lg_4 -->
+          <div class="col_12 col_md_6 col_lg_4"></div>
+          <!-- /.col_12 col_md_6 col_lg_4 -->
+          <div class="col_12 col_md_6 col_lg_4"></div>
+          <!-- /.col_12 col_md_6 col_lg_4 -->
+          <div class="col_12 col_md_6 col_lg_4"></div>
+          <!-- /.col_12 col_md_6 col_lg_4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.benefits -->
 
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col_12 col_md_8"></div>
+          <!-- /.col_12 col_md_8 -->
+          <div class="col_12 col_md_4"></div>
+          <!-- /.col_12 col_md_4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.about -->
+    <section class="call_to_action">
+      <div class="container"></div>
+      <!-- /.container -->
+    </section>
+    <!-- /.call_to_action -->
 
+  </main>
+  <!-- /#site_main -->
+  <footer id="site_footer"></footer>
+  <!-- /#site_footer -->
 
-  </body>
+</body>
+
 </html>
