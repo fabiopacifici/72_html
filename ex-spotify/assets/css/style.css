@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darker: #000;
+    --dark: #333;
+    --dark-blue: rgb(0, 0, 63);
+    --nav-mobile: 50px;
+    --nav-wide: 240px;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.top {
+    height: calc(100vh - 80px);
+    background-color: var(--dark-blue);
+    display: flex;
+}
+
+.player {
+    height: 80px;
+    background-color: var(--dark);
+
+}
+
+
+
+.sidebar {
+    width: var(--nav-mobile);
+    background-color: var(--darker);
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.upgrade {
+    height: 60px;
+    background-color: var(--dark);
+    text-align: end;
+}
+
+.album {
+    width: calc(100% / 2 - 1rem);
+    aspect-ratio: 1 / 1;
+}
+
+.debug .album {
+    background-color: red;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.music {
+    overflow-y: auto;
+    height: calc(100% - 60px);
+}
+
+.player {
+    display: flex;
+}
+
+.player .album_details,
+.player .audio {
+    flex-grow: 1;
+}
+
+.player .controls {
+    flex-grow: 4;
+}
+
+.debug .album_details,
+.debug .audio {
+    background-color: white;
+}
+
+@media screen and (min-width: 568px) {
+    .sidebar {
+        width: var(--nav-wide);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .album {
+        width: calc(100% / 4 - 1rem);
+        ;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .album {
+        width: calc(100% / 6 - 1rem);
+        ;
+    }
+}
