@@ -1,51 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <!-- Google Fonts CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <!-- Fontawesome CDN -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
 
-<body class="debug">
+    <body class="">
 
-    <div class="wrapper">
-        <div class="top">
-            <div class="sidebar"></div>
-            <div class="content">
-                <div class="upgrade"></div>
-                <div class="music">
-                    <div class="container">
-                        <div class="row">
-                            <div class="album"></div>
-                            <div class="album"></div>
-                            <div class="album"></div>
-                            <div class="album"></div>
-                            <div class="album"></div>
-                            <div class="album"></div>
+        <div class="wrapper">
+            <div class="top">
+                <div class="sidebar">
+                    <div class="sidebar_top">
+                        <div class="sidebar_top_logo">
+                            <img width="28" class="logo_mobile"
+                                src="./assets/img/logo-small.svg" alt="">
+                            <img width="138" class="logo"
+                                src="./assets/img/logo.svg" alt="">
+                        </div>
+
+                        <ul class="menu">
+                            <li>
+                                <img width="20" src="./assets/img/home.svg"
+                                    alt="">
+                                <span>Home</span>
+                            </li>
+                            <li>
+                                <img width="20" src="./assets/img/search.svg"
+                                    alt="">
+                                <span>Cerca</span>
+                            </li>
+                            <li>
+                                <img width="20" src="./assets/img/libreria.svg"
+                                    alt="">
+                                <span>La tua libreria</span>
+                            </li>
+                        </ul>
+
+                        <div class="playlist_wrapper">
+                            <h3>Playlist</h3>
+                            <div class="playlist_add">
+                                <div class="icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                                <span>Crea Playlist</span>
+                            </div>
+                            <ul class="playlists">
+                                <li>Playlist name</li>
+                                <li>Playlist name</li>
+                                <li>Playlist name</li>
+                                <li>Playlist name</li>
+                                <li>Playlist name</li>
+                                <li>Playlist name</li>
+                                <li>Playlist name</li>
+                            </ul>
 
                         </div>
-                        <div class="row">
-                            <div class="album"></div>
-                            <div class="album"></div>
+
+                    </div>
+                    <div class="sidebar_bottom">
+                        <div class="app">
+                            <img src="./assets/img/download.svg" height="30"
+                                alt="">
+                            <strong>Installa app</strong>
                         </div>
-                        <div class="row">
-                            <div class="album"></div>
-                            <div class="album"></div>
+                        <div class="user">
+                            <div class="profile">
+                                <img src="./assets/img/profile.svg" height="32"
+                                    alt="">
+                            </div>
+                            <strong>John Doe</strong>
                         </div>
                     </div>
                 </div>
+                <!-- /.sidebar -->
+                <div class="content">
+                    <div class="upgrade"></div>
+                    <div class="music">
+                        <div class="container">
+
+                            <!-- Recently Played -->
+                            <h2 class="title">Recently played</h2>
+                            <div class="row">
+                                <div class="album">
+                                    <div class="card">
+                                        <img
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="card">
+                                        <img
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="card">
+                                        <img
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="card">
+                                        <img
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="card">
+                                        <img
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="card">
+                                        <img
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Creato per jd -->
+                            <h2 class="title">Creato per John</h2>
+                            <div class="row">
+                                <div class="album">
+                                    <div class="card">
+                                        <img
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="card">
+                                        <img
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Creato per jd -->
+                            <h2 class="title">Artisti piú popolari</h2>
+                            <div class="row">
+                                <div class="album">
+                                    <div class="card">
+                                        <img class="rounded_circle"
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="album">
+                                    <div class="card">
+                                        <img class="rounded_circle"
+                                            src="./assets/img/metal_lifting.jpg"
+                                            alt="">
+                                        <div class="card_body">
+                                            <h4 class="title">Heavy Metal</h4>
+                                            <h5 class="subtitle">Subtitle</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.content -->
+            </div>
+            <!-- /.top -->
+            <div class="player">
+                <div class="album_details">
+                    <div class="details">
+                        <img src="./assets/img/metal_lifting.jpg" alt="">
+                        <div class="text">
+                            <h4 class="title">Sinister</h4>
+                            <h5 class="subtitle">Brano Nome</h5>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="controls_top">
+                        <!-- All icons here -->
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="controls_bottom">
+                        <div class="time_count">
+                            00:25
+                        </div>
+                        <div class="time_bar">
+                            <div class="time_gone">
+                                <div class="pointer"></div>
+                            </div>
+
+                        </div>
+                        <div class="total_time">
+                            04:25
+                        </div>
+                    </div>
+                </div>
+                <div class="audio"></div>
             </div>
         </div>
-        <div class="player">
-            <div class="album_details"></div>
-            <div class="controls"></div>
-            <div class="audio"></div>
-        </div>
-    </div>
+        <!-- /.wrapper -->
 
-</body>
+    </body>
 
 </html>
