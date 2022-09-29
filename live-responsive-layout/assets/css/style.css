@@ -254,7 +254,6 @@ header .main_menu {
 .demo .card p {
   line-height: 1.5rem;
   font-weight: bold;
-  color: var(--dark);
   padding: 1rem 0;
   color: var(--light-gray);
   font-size: 0.95rem;
