@@ -1,0 +1,21 @@
+body {
+  background-color: red;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle::after {
+  border: none;
+  font: var(--fa-font-solid);
+  content: '\f107';
+
+}
+
+.dropdown-toggle.show::after {
+  border: none;
+  font: var(--fa-font-solid);
+  content: '\f106';
+}
